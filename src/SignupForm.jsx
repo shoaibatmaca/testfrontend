@@ -27,7 +27,7 @@ export default function SignupForm() {
 
     try {
       const response = await axios.post(
-        "http://127.0.0.1:8000/accounts/api/signup/",
+        "https://web-production-3b7d9.up.railway.app/accounts/api/signup/",
         { ...formData, remember_me: rememberMe },
         {
           headers: { "Content-Type": "application/json" },
